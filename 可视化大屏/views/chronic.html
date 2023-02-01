@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据可视化demo</title>
+    <link href="../styles/common.css" rel="stylesheet">
+    <link href="../styles/bootstrap.min.css" rel="stylesheet">
+    <link href="../styles/bootstrap-table.css" rel="stylesheet">
+    <link href="../styles/pagination.css" rel="stylesheet">
+    <script src="../scripts/Plugin/jquery-3.3.1.min.js"></script>
+    <script src="../scripts/Plugin/echarts.min.js"></script>
+    <script src="../scripts/Plugin/jquery.pagination.min.js"></script>
+    <script src="../scripts/common.js"></script>
+    <script src="../scripts/chronic.js"></script>
+</head>
+<body>
+<!--顶部-->
+<header class="header left">
+    <div class="left nav">
+        <ul>
+            <li><i class="nav_1"></i><a href="index.html">采集概况</a> </li>
+            <li><i class="nav_2"></i><a href="quota.html">指标分析</a> </li>
+            <li><i class="nav_3"></i><a href="trend.html">趋势分析</a> </li>
+            <li><i class="nav_4"></i><a href="chronic.html">数据部分展示</a> </li>
+            <li><i class="nav_3"></i><a href="tu.html">可视化图</a> </li>
+          </ul>
+    </div>
+    <div class="header_center left" style="position:relative">
+        <h2><strong>爬取电影数据部分展示</strong></h2>
+
+    </div>
+    <div class="right nav text_right">
+        <ul>
+
+        </ul>
+    </div>
+
+</header>
+<!--内容部分-->
+<div class="con left" style="width: 98%;margin-left: 1%;margin-bottom: 25px;">
+
+    <input type="text" placeholder="请输入电影名称" style="width: 180px;height: 28px;border-radius: 3px;text-indent: 1em;border: 1px ; solid: #22bb8d;color: rgb(120, 170, 54);" /><button class="btn btn-primary btn-sm" style="margin-left:20px"><span class="glyphicon glyphicon-search"></span>查询</button>
+
+    <div class="div_any_child">
+          <div class="table_p" style="height: 96%;margin-top: 20px;">
+              <table>
+                  <thead><tr>
+                      <th>序号</th>
+                      <th>电影名称</th>
+                      <th>电影外文名</th>
+                      <th>概况</th>
+                      <th>相关信息</th>
+                  </tr>
+                  </thead>
+                  <tbody>
+                  <tr><td>1</td><td>肖申克的救赎</td><td>The Shawshank Redemption</td><td>希望让人自由</td><td>1994 美国 犯罪 剧情</td></tr>
+                  <tr><td>2</td><td>霸王别姬</td><td>null</td><td>风华绝代</td><td>1993 中国大陆 剧情 爱情</td></tr>
+                  <tr><td>3</td><td>阿甘正传</td><td>Forrest Gump</td><td>一部美国近现代史</td><td>1994 美国 剧情 爱情</td></tr>
+                  <tr><td>4</td><td>泰坦尼克号</td><td>Titanic</td><td>失去的才是永恒的 </td><td>1997 美国 剧情 灾难</td></tr>
+                  <tr><td>5</td><td>这个杀手不太冷</td><td>Léon</td><td>怪蜀黍和小萝莉不得不说的故事</td><td>1994 法国 剧情动作犯罪</td></tr>
+                  <tr><td>6</td><td>美丽人生</td><td>La vita è bella</td><td>最美的谎言</td><td>1997 意大利 剧情 喜剧 爱情</td></tr>
+                  <tr><td>7</td><td>千与千寻</td><td>千と千尋の神隠し</td><td>最好的宫崎骏，最好的久石让 </td><td>2001 日本 剧情 动画</td></tr>
+                  <tr><td>8</td><td>辛德勒的名单/td><td>Schindler's List</td><td>拯救一个人，就是拯救整个世界</td><td>1993 美国 剧情 历史</td></tr>
+                  <tr><td>9</td><td>盗梦空间</td><td>Inception</td><td>诺兰给了我们一场无法盗取的梦</td><td>2010 美国 剧情 冒险</td></tr>
+                  <tr><td>10</td><td>忠犬八公的故事</td><td>Hachi: A Dog's Tale</td><td>永远都不能忘记你所爱的人</td><td>2009 美国 英国 剧情</td></tr>
+                  </tbody>
+              </table>
+          </div>
+          <div class="box">
+              <div id="pagination" class="page fl"></div>
+          </div>
+        </div>
+
+
+    </div>
+</div>
+</body>
+</html>
